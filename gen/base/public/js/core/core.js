@@ -5843,7 +5843,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && typeof(url) === 'object' && url.href) return url;
-
+console.log('*** urlParse');
   if (typeof url !== 'string') {
     throw new TypeError("Parameter 'url' must be a string, not " + typeof url);
   }
